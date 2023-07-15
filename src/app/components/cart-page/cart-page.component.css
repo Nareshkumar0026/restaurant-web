@@ -1,0 +1,75 @@
+.container{
+    border: 3px solid black;
+    border-radius: 7px;
+    margin-top: 20px;
+    background-color: gray;
+}
+.container h1{
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: 2px;
+    background-color: black;
+    border-radius: 10px;
+    padding: 6px;
+}
+.card{
+    list-style-type: none;
+    border: 3px solid black;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-decoration: none;
+    width: 17%;
+}
+.card p{
+    background-color: goldenrod;
+    color: white;
+    padding: 5px;
+    font-weight: 900;
+}
+.card a{
+    text-decoration: none;
+    background-color:black;
+    color: white;
+    font-weight: 800;
+}
+.card select{
+    text-align: center;
+    background-color: darkcyan;
+    font-weight: 600;
+    color: white;
+}
+.card img{
+    height: 210px;
+    width: 210px;
+}
+.card .container1{
+    display: flex;
+    flex-direction: column;
+    width: 210px;
+    text-align: center;
+    text-decoration: none;
+}
+.checkout{
+    display:flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    justify-content: space-evenly;
+    font-weight: 600;
+    width: 500px;
+    border-radius: 10px;
+}
+.checkout .align{
+    position: relative;
+    left: 100px;
+}
+.card button{
+    background-color:red;
+    color: white;
+
+}

@@ -1,0 +1,6 @@
+<div class="container">
+    <!-- RENDERING THE VALUES FROM THE CATEGORY ARRAY TO FILTER IT-->
+<div *ngFor="let cat of category">
+    <a routerLink="/category/{{cat.title}}">{{cat.title}}({{cat.number}})</a>
+</div>
+</div>

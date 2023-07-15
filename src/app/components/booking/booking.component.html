@@ -1,0 +1,69 @@
+<body>
+
+    <form [formGroup]="booking" class="bg-success">
+        <div class="container mt-3 bg-dark" >
+            <div class="row justify-content-center mt-4">
+                <div class="col-lg-3">
+                    <h1 class="p-4 text-light">Booking</h1>
+                    
+                    <!--Name input-->
+        <label class="text-light p-2" >Name:</label>
+        <input type="text" formControlName="username" placeholder="Enter your Name">
+        <div *ngIf="username?.invalid && username?.touched">
+            <small [hidden]="!username?.errors?.['required']" class="text-danger">Name is Required.</small>
+            <small [hidden]="!username?.errors?.['minlength']" class="text-danger">Name atleast contain 4 characters.</small>
+        </div>
+        <br><br>
+                    <!--Phone Number Input-->
+        <label class="text-light p-2" >Phone No:</label>
+        <input type="text" formControlName="phone" pattern="[789][0-9]{9}" placeholder="Enter Phone Number" >
+        <div *ngIf="phone?.invalid && phone?.touched">
+            <small [hidden]="!phone?.errors?.['pattern']" class="text-danger">Invalid Phone Number.</small>
+        </div>
+        <br><br>
+                   <!-- E-Mail Input-->
+        <label class="text-light p-2" >Email</label>
+        <input type="email" formControlName="email" placeholder="Enter your E-mail" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
+        <div *ngIf="email?.invalid && email?.touched">
+             <small [hidden]="!email?.errors?.['pattern']" class="text-danger">Invalid E-mail.</small>
+        </div>
+        <br><br>
+                     <!-- Date Input-->
+        <label class="text-light p-2" >Date</label>
+         <input type="date" formControlName="date"><br><br>
+                     <!-- Time Input-->
+        <label class="text-light p-2 " >Time</label>
+        <input type="time" formControlName="time"><br><br>
+                   <!-- Selected table reserve input-->
+        <label class="text-light p-2" >Table Reserve</label>
+        <select formControlName="option">
+            <option selected>No.of.person</option>
+            <option>2 people</option>
+            <option>3 people</option>
+            <option>4 people</option>
+            <option>5 people</option>
+            <option>6 people</option>
+            <option>7 people</option>
+            <option>8 people</option>
+            <option>9 people</option>
+            <option>10 people</option>
+            <option>11 people</option>
+            <option>12 people</option>
+            <option>13 people</option>
+            <option>14 people</option>
+            <option>15 people</option>
+            <option>16 people</option>
+            </select><br><br>
+              <!-- Reminders Input -->
+        <input type="checkbox">
+        <label class="text-light p-2" >Notify reminders and updates</label><br><br> 
+               <!--  Submit button Input-->
+        <button type="submit" class="bg-warning text-light w-100" [disabled]="booking.invalid" (click)="onsubmit()">Book A Table</button>   
+        </div>
+            </div>
+            </div>
+    </form>
+    
+    
+    
+</body>

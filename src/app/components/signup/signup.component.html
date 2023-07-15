@@ -1,0 +1,24 @@
+<body>
+    <div class="container mt-3 p-5">
+        <div class="row justify-content-center mt-4">
+            <div class="col-lg-3">
+                <!-- TEMPLATE-DRIVEN FORM WITH BOOTSTRAP CLASSES -->
+    <form #signform="ngForm" (ngSubmit)="Onsubmit(signform)"  class="bg-dark p-4">
+        <h1 class="text-center text-light p-2">Sign In</h1>
+        <input type="text" class="form-control" [ngClass]="{'is-invalid': name.touched && name.invalid}" placeholder="@Username" #name="ngModel" [(ngModel)]="username" name="username" required>
+        <div class="alert alert-danger"  *ngIf="name.touched && name.invalid">UserName is Required..</div>
+        <br><br>
+        <input type="password" class="form-control" [ngClass]="{'is-invalid': pass.touched && pass.invalid}"
+         placeholder="Enter Your Password" [(ngModel)]="userpassword" #pass="ngModel" name="password" required  minlength="8">
+    
+        <div class="alert alert-danger"  *ngIf="pass.touched && pass.invalid">Password is Required & must contain 8 Characters..</div>
+        
+        <br><br>
+        <input type="checkbox">
+        <label class="text-light">Remember Me</label><br><br>
+        <button class="btn btn-primary w-100" [disabled]="signform.invalid">Sign In</button>
+      </form>
+    </div>
+    </div>
+    </div>
+</body>

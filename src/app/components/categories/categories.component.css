@@ -1,0 +1,19 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+a{
+    padding: 5px;
+    background-color: black;
+    margin-bottom: 35px;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+    border:2px solid red;
+    border-radius: 6px;
+}
+a:hover{
+    background-color:goldenrod;
+}

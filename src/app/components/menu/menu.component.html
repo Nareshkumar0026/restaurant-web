@@ -1,0 +1,21 @@
+<body>
+    <div class="container">
+        <h1 class="text-center p-3 bg-danger text-light">Menus</h1>
+         <!--SEARCH BAR HTML TEMPLATE-->
+        <app-search-bar></app-search-bar>
+        <!-- CATEGORY HTML TEMPLATE-->
+        <app-categories></app-categories>
+        <app-error-search [visible]="!foods || foods.length <=0"></app-error-search>
+        <!--RENDERING THE VALUE FROM THE FOODSERVICE TO DISPLAY THE MENU ITEMS-->
+        <div class="card p-2" *ngFor="let card of foods let i=index;">
+            <a routerLink="/food/{{card.id}}">
+            <img [src]="card.imgurl" loading="lazy" alt="Menus" class="card-img-top"></a>
+            <div class="card-body">
+                <h4 class="card-title text-warning">{{card.title}}</h4>
+                <p class="card-text  text-light">{{card.price | currency:'INR'}}</p>
+                <p class="card-text" id="Category">Category: {{card.Category}}</p>
+            </div>
+        </div>
+        </div>
+    
+</body>

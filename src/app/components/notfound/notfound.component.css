@@ -1,0 +1,17 @@
+.container1{
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-weight: 800;
+}
+.container1 a{
+    background-color: saddlebrown;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 400;
+}

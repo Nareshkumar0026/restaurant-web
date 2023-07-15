@@ -1,0 +1,23 @@
+body{
+    background: linear-gradient(rgba(0,0,0,0.89),rgba(0,0,0,0.89)),url(/assets/images/Background-images/bgimage1.jpeg),no-repeat;
+    background-size: cover 100% 100%;
+}
+h1{
+    text-align: center;
+    color:teal;
+    font-size:50px;
+    padding: 5px 5px;
+}
+p{
+    position: relative;
+    left:50px;
+    justify-content: center;
+    color: white;
+    font-size:30px;
+    line-height: 70px;
+    letter-spacing: 2px;
+
+}
+b{
+    font-size: 2em;
+}

@@ -1,0 +1,14 @@
+<div class="container">
+    <div>
+        <h3>Menu Card</h3>
+        <img [src]="food.imgurl">
+        <div class="details">
+        <span>{{food.title}}</span>
+        <p>{{food.price | currency:'INR'}}</p>
+        <p class="Category">Category :  {{food.Category}}</p>
+        <button (click)="addtocart()" class="bi bi-cart3">Add to Cart</button>
+        </div>
+    </div>
+
+    
+</div>
