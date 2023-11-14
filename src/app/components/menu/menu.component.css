@@ -7,7 +7,7 @@
 }
 .card img{
     height: 200px;
-    width: 200px;
+    width: 100%;
 }
 .card:hover{
     transform: scale(0.94);
@@ -29,7 +29,6 @@ h1{
     padding: 5px;
     background-color: black;
     color: antiquewhite;
-    width: 75%;
+    width: 100%;
     border-radius: 7px;
-
 }
