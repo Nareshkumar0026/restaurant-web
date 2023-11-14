@@ -9,15 +9,15 @@ h1{
     padding: 5px 5px;
 }
 p{
-    position: relative;
-    left:50px;
     justify-content: center;
     color: white;
     font-size:30px;
     line-height: 70px;
     letter-spacing: 2px;
-
 }
 b{
     font-size: 2em;
+}
+.img-thumbnail{
+    margin-top: 1em;
 }
